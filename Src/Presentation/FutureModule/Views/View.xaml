@@ -1,0 +1,25 @@
+﻿<Window x:Class="FutureModule.Views.View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:AttachedProperty="clr-namespace:WPF.RealTime.Infrastructure.AttachedProperty;assembly=WPF.RealTime.Infrastructure" xmlns:AttachedCommand="clr-namespace:WPF.RealTime.Infrastructure.AttachedCommand;assembly=WPF.RealTime.Infrastructure" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" Title="View"
+        WindowStyle="ToolWindow"
+        AttachedProperty:WindowProperties.Left="{x:Static AttachedProperty:WindowProperties.HalfWidth}"
+        AttachedProperty:WindowProperties.Top="1"
+        AttachedProperty:WindowProperties.Height="{x:Static AttachedProperty:WindowProperties.OneHalfHeight}"
+        AttachedProperty:WindowProperties.Width="{x:Static AttachedProperty:WindowProperties.HalfWidth}">
+    <StackPanel Orientation="Vertical">
+        <TextBlock>Future Market Data View</TextBlock>
+        <DataGrid HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"
+                  MaxHeight="{x:Static AttachedProperty:WindowProperties.OneHalfHeightNoBorder}"
+                  Name="MainGrid"
+                  ItemsSource="{Binding Entities}">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="AutoGeneratingColumn">
+                    <AttachedCommand:EventToCommandTrigger 
+                                Command="{Binding CreateColumnsCommand}" 
+                                />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </DataGrid>
+    </StackPanel>
+</Window>

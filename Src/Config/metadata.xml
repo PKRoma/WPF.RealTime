@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<common>
+		<field Name="Isin" Type="System.String" ReadOnly="true" />
+		<field Name="BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="AskVol" Type="System.Int32" ReadOnly="false" />
+		<field Name="BidVol" Type="System.Int32" ReadOnly="false" />
+		<field Name="BasisAsk" Type="System.Double" ReadOnly="false" />
+		<field Name="BasisAskSize" Type="System.Double" ReadOnly="false" />
+		<field Name="BasisAskChange" Type="System.Double" ReadOnly="false" />
+		<field Name="BasisBid" Type="System.Double" ReadOnly="false" />
+		<field Name="BasisBidSize" Type="System.Double" ReadOnly="false" />
+		<field Name="BasisBidChange" Type="System.Double" ReadOnly="false" />
+		<field Name="CM1BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM1AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM1BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM1AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM2BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM2AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM2BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM2AskYield" Type="System.Double" ReadOnly="false" />
+    <!--
+		<field Name="CM3BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM3AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM3BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM3AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM4BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM4AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM4BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM4AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM5BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM5AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="CM5BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="CM5AskYield" Type="System.Double" ReadOnly="false" />
+    -->
+	</common>
+	<bond>
+		<field Name="M1BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M1AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M1BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M1AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M2BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M2AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M2BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M2AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M3BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M3AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M3BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M3AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M4BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M4AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M4BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M4AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M5BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M5AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="M5BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="M5AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="SpreadBidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="SpreadMidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="SpreadAskPrice" Type="System.Double" ReadOnly="false" />
+	</bond>
+	<future>
+    <!--
+		<field Name="FM1BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM1AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM1BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM1AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM2BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM2AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM2BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM2AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM3BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM3AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM3BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM3AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM4BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM4AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM4BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM4AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM5BidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM5AskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FM5BidYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FM5AskYield" Type="System.Double" ReadOnly="false" />
+		<field Name="FwBidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FwMidPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="FwAskPrice" Type="System.Double" ReadOnly="false" />
+		<field Name="ExpiryDate" Type="System.DateTime" ReadOnly="false" />
+    -->
+	</future>
+</metadata>
