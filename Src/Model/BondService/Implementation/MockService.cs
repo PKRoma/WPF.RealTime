@@ -29,8 +29,8 @@ namespace BondService.Implementation
                 for (; ; )
                 {
                     if (_isProcessorAffinity) ProcessorAffinity.BeginAffinity(0);
-                    //Thread.Sleep(1);
-                    var key = String.Intern("BOND" + _rand.Next(1, 30));
+                    Thread.Sleep(1);
+                    var key = String.Intern("BOND" + _rand.Next(1, 300));
                     int prop = _rand.Next(1, 56);
                     string propName = string.Empty;
                     object propValue = null;

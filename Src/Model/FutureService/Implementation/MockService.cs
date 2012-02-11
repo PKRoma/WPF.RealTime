@@ -24,9 +24,9 @@ namespace FutureService.Implementation
             {
                 for (; ; )
                 {
-                    //Thread.Sleep(1);
+                    Thread.Sleep(1);
                     var key = "FUTURE" + _rand.Next(1, 20);
-                    int prop = _rand.Next(1, 21);
+                    int prop = _rand.Next(1, 57);
                     string propName = string.Empty;
                     object propValue = null;
                     switch (prop)
@@ -111,7 +111,6 @@ namespace FutureService.Implementation
                             propName = "CM2AskYield";
                             propValue = _rand.NextDouble();
                             break;
-                        /*
                         case 21:
                             propName = "CM3BidPrice";
                             propValue = _rand.NextDouble();
@@ -256,7 +255,6 @@ namespace FutureService.Implementation
                             propName = "ExpiryDate";
                             propValue = DateTime.UtcNow;
                             break;
-                        */
                     }
                     EventHandler<EventArgs<DataRecord>> handler = DataReceived;
                     if (handler != null)

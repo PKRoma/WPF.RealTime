@@ -22,7 +22,6 @@
 		<field Name="CM2AskPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="CM2BidYield" Type="System.Double" ReadOnly="false" />
 		<field Name="CM2AskYield" Type="System.Double" ReadOnly="false" />
-    <!--
 		<field Name="CM3BidPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="CM3AskPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="CM3BidYield" Type="System.Double" ReadOnly="false" />
@@ -35,7 +34,6 @@
 		<field Name="CM5AskPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="CM5BidYield" Type="System.Double" ReadOnly="false" />
 		<field Name="CM5AskYield" Type="System.Double" ReadOnly="false" />
-    -->
 	</common>
 	<bond>
 		<field Name="M1BidPrice" Type="System.Double" ReadOnly="false" />
@@ -63,7 +61,6 @@
 		<field Name="SpreadAskPrice" Type="System.Double" ReadOnly="false" />
 	</bond>
 	<future>
-    <!--
 		<field Name="FM1BidPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="FM1AskPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="FM1BidYield" Type="System.Double" ReadOnly="false" />
@@ -88,6 +85,5 @@
 		<field Name="FwMidPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="FwAskPrice" Type="System.Double" ReadOnly="false" />
 		<field Name="ExpiryDate" Type="System.DateTime" ReadOnly="false" />
-    -->
 	</future>
 </metadata>
