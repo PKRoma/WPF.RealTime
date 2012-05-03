@@ -86,8 +86,11 @@ namespace WPF.RealTime.Infrastructure.Tasks.Schedulers
                         _readyToRunQueue.Enqueue(headTask);
                         _readyToRunQueue.Enqueue(dequeuedTask);
                     }
-
-                    _readyToRunQueue.Enqueue(headTask);
+                    else
+                    {
+                        _readyToRunQueue.Enqueue(headTask);
+                    }
+                    
                 }  
             }
         }
