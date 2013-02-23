@@ -1,0 +1,7 @@
+Bin/
+Modules/
+Services/
+obj/
+bin/
+*.user
+*.suo
